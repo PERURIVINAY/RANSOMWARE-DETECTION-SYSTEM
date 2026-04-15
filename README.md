@@ -39,7 +39,7 @@ ransomware_detection/
 
 
 
-### 2. Launch the Backend
+### 1. Launch the Backend
 ```bash
 cd backend
 pip install -r requirements.txt
@@ -47,7 +47,7 @@ python app.py
 ```
 *The backend will start a background monitoring thread and expose the API at http://localhost:5000.*
 
-### 3. Launch the Dashboard
+### 2. Launch the Dashboard
 ```bash
 cd frontend
 npm install
@@ -55,7 +55,7 @@ npm run dev
 ```
 *Open the provided Vite URL (usually http://localhost:5173) to view the real-time dashboard.*
 
-### 4. Test the System (Simulation)
+### 3. Test the System (Simulation)
 Open a new terminal and run:
 ```bash
 python simulation/simulate_attack.py
