@@ -37,30 +37,7 @@ ransomware_detection/
 
 ---
 
-## 🛠️ Setup & Execution
 
-### 1. Database Configuration (Supabase)
-Ensure your Supabase project has the necessary tables. Run the following SQL in the **Supabase SQL Editor**:
-
-```sql
-CREATE TABLE alerts (
-    id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-    created_at TIMESTAMPTZ DEFAULT now(),
-    threat_type TEXT NOT NULL,
-    risk_score FLOAT NOT NULL,
-    description TEXT,
-    details JSONB
-);
-
-CREATE TABLE system_logs (
-    id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-    timestamp TIMESTAMPTZ DEFAULT now(),
-    cpu_usage FLOAT,
-    memory_usage FLOAT,
-    process_count INTEGER,
-    file_change_rate INTEGER
-);
-```
 
 ### 2. Launch the Backend
 ```bash
